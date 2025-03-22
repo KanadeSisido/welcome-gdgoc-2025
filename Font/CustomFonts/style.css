@@ -1,0 +1,30 @@
+/*
+    新しくフォントを追加するときは，
+    Google Fontsを使うと便利です！
+    https://fonts.google.com/
+
+    Google Fontsの使い方はindex.htmlも参照してください！
+
+*/
+
+.kiwi-maru-regular {
+	font-family: "Kiwi Maru", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.jost-400 {
+	font-family: "Jost", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.jost-200 {
+	font-family: "Jost", serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+p {
+	font-size: xx-large;
+}
