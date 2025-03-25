@@ -29,7 +29,7 @@ body {
 	border-radius: 10px;
 
 	/* background blur */
-	background-color: #ffffff50;
+	background: linear-gradient(120deg, #ffffff30, #00000030);
 	backdrop-filter: blur(7px);
 }
 
