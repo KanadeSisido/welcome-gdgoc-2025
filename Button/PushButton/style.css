@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 20px;
+}
+
+.link-button {
+	position: relative;
+
+	/* layout + shape */
+	width: 200px;
+	height: 60px;
+}
+
+.link-button a {
+	/* reset default */
+	text-decoration: none;
+	outline: none;
+
+	/* layout + shape */
+	position: absolute;
+	display: inline-flex;
+
+	top: -5px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+	align-items: center;
+	justify-content: center;
+
+	/* color + design */
+	background-color: red;
+	color: #ffe9e9;
+
+	/* font */
+	font-size: large;
+	font-weight: 600;
+
+	transition: top 0.1s ease-in;
+}
+
+.link-button a:hover {
+	top: -7px;
+}
+
+.link-button a:active {
+	top: 0px;
+}
+
+.link-button span {
+	/* layout + shape */
+	position: absolute;
+	display: inline-block;
+
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+	/* color + design */
+	background-color: brown;
+}
