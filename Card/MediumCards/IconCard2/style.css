@@ -9,19 +9,23 @@ body {
 }
 
 .card-wrapper {
+	/* layout + shape */
 	position: relative;
-
 	width: 540px;
 	height: 280px;
 }
 
 .icon-image {
+	/* layout + shape */
 	width: 200px;
 	border-radius: 30px;
+
+	/* color + design */
 	filter: drop-shadow(5px 5px 5px #00000040);
 }
 
 .card {
+	/* layout + shape */
 	position: absolute;
 	top: 30px;
 	left: 30px;
@@ -33,10 +37,13 @@ body {
 	align-items: center;
 	padding-left: 210px;
 	padding-bottom: 40px;
+
+	/* color + design */
 	background-color: #dcdcdc;
 }
 
 .buttons-wrapper {
+	/* layout + shape */
 	position: absolute;
 	display: flex;
 	gap: 10px;
@@ -52,15 +59,20 @@ body {
 }
 
 .link-button {
-	position: relative;
-	display: flex;
+	/* reset default */
 	text-decoration: none;
 	outline: none;
+
+	/* layout + shape */
+	position: relative;
+	display: flex;
 
 	align-items: center;
 	justify-content: center;
 
 	width: 100%;
+
+	/* color + design */
 	background-color: #d7c899;
 	border-radius: 10px;
 }

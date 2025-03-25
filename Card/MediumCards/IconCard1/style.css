@@ -9,18 +9,22 @@ body {
 }
 
 .background {
+	/* layout + shape */
 	display: flex;
 	flex-direction: column;
+
+	width: 400px;
+	height: 600px;
 
 	align-items: center;
 	justify-content: center;
 
+	/* color + design */
 	background-color: #dcdcdc;
-	width: 400px;
-	height: 600px;
 }
 
 .card-wrapper {
+	/* layout + shape */
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -28,37 +32,45 @@ body {
 }
 
 .icon-wrapper {
+	/* layout + shape */
 	padding: 5px;
 	width: 200px;
 	height: 200px;
-
-	border: solid 3px #17a18f36;
 	border-radius: 9999px;
+
+	/* color + design */
+	border: solid 3px #17a18f36;
 }
 
 .icon-wrapper img {
+	/* layout + shape */
 	width: 100%;
 	border-radius: 9999px;
 }
 
 .divider {
+	/* layout + shape */
 	width: 60px;
 	height: 5px;
 	border-radius: 9999px;
 
+	/* color + design */
 	background-color: #17a18f36;
 }
 
 .name-wrapper h2,
 p {
+	/* layout + shape */
 	text-align: center;
 	margin: 0 auto;
 
+	/* font */
 	font-weight: 400;
 	letter-spacing: 0.02em;
 }
 
 .buttons-wrapper {
+	/* layout + shape */
 	display: flex;
 	flex-direction: row;
 	margin-top: 30px;
@@ -66,10 +78,11 @@ p {
 }
 
 .link-button {
-	display: flex;
+	/* reset default */
 	text-decoration: none;
 	outline: none;
-
+	/* layout + shape */
+	display: flex;
 	align-items: center;
 	justify-content: center;
 
@@ -77,6 +90,7 @@ p {
 	height: 60px;
 	border-radius: 9999px;
 
+	/* color + design */
 	background-color: #d6bc6e;
 	color: #f0f0f0;
 }

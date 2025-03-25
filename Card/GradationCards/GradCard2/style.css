@@ -9,10 +9,13 @@ body {
 }
 
 .background {
+	/* layout + shape */
 	position: relative;
-	background: linear-gradient(#407cff, #74bfee);
 	padding: 100px 150px;
 	max-width: 800px;
+
+	/* color + design */
+	background: linear-gradient(#407cff, #74bfee);
 }
 
 .Lji {
