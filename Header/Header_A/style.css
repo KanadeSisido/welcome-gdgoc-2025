@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	/* ヘッダーの裏側にも何か表示したい場合は position: fixed; に変更する*/
+	position: sticky;
+	z-index: 999;
+	top: 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 100px;
+
+	padding: 0 30px;
+}
+
+.header-title {
+	font-size: xx-large;
+	color: #333;
+}
+
+.header-contents {
+	display: flex;
+	gap: 40px;
+}
+
+.header-contents li {
+	list-style: none;
+}
+
+.content {
+	font-size: larger;
+	text-decoration: none;
+	color: #333;
+}
+.content:hover {
+	color: #aaa;
+}
+
+.rounded-content {
+	font-size: larger;
+	text-decoration: none;
+
+	padding: 10px 20px;
+	border-radius: 999px;
+
+	background-color: darkslateblue;
+	color: white;
+}
+
+.cormorant-300 {
+	font-family: "Cormorant", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}

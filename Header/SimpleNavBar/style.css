@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: sticky;
+	z-index: 999;
+	top: 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 80px;
+
+	padding: 0 30px;
+
+	background-color: dodgerblue;
+	filter: drop-shadow(5px 5px 5px #00000030);
+}
+
+.nav-title {
+	font-size: x-large;
+	color: aliceblue;
+}
+
+.nav-contents {
+	display: flex;
+	gap: 15px;
+}
+
+.nav-contents li {
+	list-style: none;
+}
+
+.nav-contents li a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.nav-contents li a:hover {
+	color: rgb(174, 217, 255);
+}
