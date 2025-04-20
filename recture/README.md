@@ -131,7 +131,7 @@ maxime nemo inventore numquam?
 ```
 |   index.html
 |   styles.css
-|   gdgoc-logo-mark.jpg
+|   logo-mark.png
 |   mySubPage.html
 ```
 
@@ -168,7 +168,7 @@ maxime nemo inventore numquam?
     <head>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg">
+        <img src="logo-mark.png">
         <h1>こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -181,15 +181,75 @@ maxime nemo inventore numquam?
 </html>
 ```
 
+![画像を追加した状態](./.readme-images/04.png "画像を追加した状態")
+
 # 05
 
 <!-- // TODO: <ul>と<li>の使い方を説明（好きな食べ物） -->
+
+次に，自分の好きなものや，情報を列挙できるリストを作成してみましょう．
+HTML でリストを作る際には`<ul> ... </ul>`と`<li> ... </li>`を使います．
+
+リストは次のように書きます．
+
+```
+<ul>
+    <li>リストの１つ目</li>
+    <li>リストの２つ目</li>
+    <li>リストの３つ目</li>
+</ul>
+```
+
+上記のコードでこのようなリストができます．
+
+![リスト](./.readme-images/05.png "リスト")
+
+サイトにも自分の好きな食べ物リストを作ってみましょう．
+
+以下のコードを p タグの下に追記します．
+
+```
+<h2>好きな食べ物</h2>
+<ul>
+    <li>うどん</li>
+    <li>ラーメン</li>
+    <li>ピザ</li>
+</ul>
+```
+
+コードはこんな感じになります．
+
+```
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="logo-mark.png">
+        <h1>こんにちは！</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
+            rem, quae voluptates accusantium quas facere sint voluptas cupiditate
+            maxime nemo inventore numquam?
+        </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
+        <a href="https://x.com/japan">私のXプロフィールへ</a>
+    </body>
+</html>
+```
 
 # 06
 
 <!-- // TODO: CSS に入り，class を使って h1（こんにちは！）に色付けする -->
 
-文字に色を付けたり，レイアウトを整えてみましょう！
+ここからは，文字に色を付けたり，レイアウトを整えてみましょう！
 HTML で作った要素を装飾するには，CSS を利用します．
 
 まずは CSS を利用する設定を始めましょう．
@@ -207,7 +267,7 @@ CSS を利用するには`head`タグの中に，`style`タグを書きます！
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg">
+        <img src="logo-mark.png">
         <h1>こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -215,6 +275,12 @@ CSS を利用するには`head`タグの中に，`style`タグを書きます！
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
@@ -227,6 +293,14 @@ HTML では class を使って，要素に名前をつけられます．その�
 
 装飾したい要素に`class="..."`を追記しましょう．
 
+こんな感じに追記します．
+
+```
+<h1 class="hello-heading">こんにちは！</h1>
+```
+
+コードはこんな感じになります．
+
 ```
 <!DOCTYPE html>
 
@@ -237,7 +311,7 @@ HTML では class を使って，要素に名前をつけられます．その�
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg">
+        <img src="logo-mark.png">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -245,12 +319,19 @@ HTML では class を使って，要素に名前をつけられます．その�
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
 ```
 
 class 名として`hello-heading`と書きましたが，これは好きな文字列でも OK です．
+
 次に，`<styles> ... </styles>`の中に以下のコードを書いてください．
 
 ```
@@ -261,7 +342,7 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
 
 `color`は文字の色を変更させるプロパティで，まずは文字を赤くしてみます．
 
-こんな感じになります．
+コードはこんな感じになります．
 
 ```
 <!DOCTYPE html>
@@ -275,7 +356,7 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg">
+        <img src="logo-mark.png">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -283,6 +364,12 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
@@ -296,9 +383,17 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
 
 # 07
 
-今度は GDGoC のロゴマークを小さくしてみましょう．
+今度はロゴマークを小さくしてみましょう．
 
 img タグに適当な class をつけます．
+
+こんな感じにつけます．
+
+```
+<img src="logo-mark.png" class="logo-mark">
+```
+
+コードはこんな感じになります．
 
 ```
 <!DOCTYPE html>
@@ -312,7 +407,7 @@ img タグに適当な class をつけます．
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg" class="gdgoc-logo">
+        <img src="logo-mark.png" class="logo-mark">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -320,22 +415,28 @@ img タグに適当な class をつけます．
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
 ```
 
-ここでは class を`gdgoc-logo`としましたが，好きな文字列でも OK です．
+ここでは class を`logo-mark`としましたが，好きな文字列でも OK です．
 
 次に，CSS に以下のコードを追記します．（既存のコードの上でも下でも大丈夫です！）
 
 ```
-.gdgoc-logo {
+.logo-mark {
     width: 100px;  /* "width"は幅を指定するプロパティ*/
 }
 ```
 
-もし，class 名を好きな文字列にした場合は，CSS の`gdgoc-logo`の部分は自分がつけた class 名に書き換えてください．
+もし，class 名を好きな文字列にした場合は，CSS の`logo-mark`の部分は自分がつけた class 名に書き換えてください．
 
 コードはこんな感じになります．
 
@@ -349,13 +450,13 @@ img タグに適当な class をつけます．
                 color: #ff0000;
             }
 
-            .gdgoc-logo {
+            .logo-mark {
                 width: 100px;  /* "width"は幅を指定するプロパティ*/
             }
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg" class="gdgoc-logo">
+        <img src="logo-mark.png" class="logo-mark">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -363,6 +464,12 @@ img タグに適当な class をつけます．
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
@@ -372,16 +479,62 @@ img タグに適当な class をつけます．
 
 ![ロゴマークが縮小したサイトの画像](./.readme-images/07.png "縮小したロゴマーク")
 
+コードはこんな感じです！
+
+```
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				background-color: #f0f0f0;
+			}
+
+			.hello-heading {
+				color: #ff0000;
+			}
+
+			.logo-mark {
+				width: 100px;
+				border-radius: 999px;
+				border: #999 2px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="logo-mark.png" class="logo-mark" />
+		<h1 class="hello-heading">こんにちは！</h1>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+			illum dolor. Aspernatur magni reiciendis labore totam et rem, quae
+			voluptates accusantium quas facere sint voluptas cupiditate maxime nemo
+			inventore numquam?
+		</p>
+		<h2>好きな食べ物</h2>
+		<ul>
+			<li>うどん</li>
+			<li>ラーメン</li>
+			<li>ピザ</li>
+		</ul>
+		<a href="https://x.com/japan">私のXプロフィールへ</a>
+	</body>
+</html>
+
+```
+
 # 08
 
-ここからは，HTML と CSS を使って，目標に近づけて行きましょう 👀
+ここからは，HTML と CSS を使って，見た目を変えていきましょう 👀
 
 まずは背景色を変更します．
 
 CSS で背景色を変更する場合は`background-color`プロパティを利用します．
+
 ✅️ 文字色を変えるのが`color`で，背景色を変えるのが`background-color`です！
 
 画面全体に背景色を入れたいので，`body`タグにスタイルを適用します．
+
 以下のコードを`style`タグの中に入れてください．
 
 ```
@@ -408,14 +561,14 @@ body {
                 color: #ff0000;
             }
 
-            .gdgoc-logo {
+            .logo-mark {
                 width: 100px;  /* "width"は幅を指定するプロパティ*/
             }
 
         </style>
     </head>
     <body>
-        <img src="gdgoc-logo-mark.jpg" class="gdgoc-logo">
+        <img src="logo-mark.png" class="logo-mark">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -423,6 +576,12 @@ body {
             rem, quae voluptates accusantium quas facere sint voluptas cupiditate
             maxime nemo inventore numquam?
         </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
         <a href="https://x.com/japan">私のXプロフィールへ</a>
     </body>
 </html>
@@ -432,17 +591,114 @@ body {
 
 <!-- ロゴを丸くする方法を解説し(border-radius)，ボーダをつける（border）方法を解説する -->
 
+ロゴに枠線をつけて，丸く切り取ってみましょう！
+
+## 枠線をつける
+
+要素に枠線をつけるには`border`プロパティを使います．
+
+今回はロゴに灰色の枠線をつけてみます．次のように追記してください！
+
 ```
-.gdgoc-logo {
+.logo-mark {
     width: 100px;
-    border-radius: 999px;
     border: #999 2px solid;
 }
 ```
 
+![borderがついたサイトの画像](./.readme-images/09-0.png "borderがつく")
+
+ここでは，灰色（`#999`）で，枠線のサイズが`2px`の枠線をつけています．
+
+## 丸く切り取る
+
+要素を丸く切り取るには`border-radius`プロパティを使います．
+
+もともと`border-radius`プロパティは，角を丸めるプロパティですが，丸める度合いを大きくすると，円に切り取ることができます．
+
+以下のように追記してみましょう！
+
+```
+.logo-mark {
+    width: 100px;
+    border: #999 2px solid;
+    border-radius: 20px;
+}
+```
+
+こんな感じに角が丸くなります．
+
+![少しロゴの角が丸くなったサイトの画像](./.readme-images/09-1.png "少し角が丸くなる")
+
+丸める度合いを非常に大きな値，`999px`にしてみましょう．
+
+```
+.logo-mark {
+    width: 100px;
+    border: #999 2px solid;
+    border-radius: 999px;
+}
+```
+
+すると，円になります！
+
+![ロゴが丸くなったサイトの画像](./.readme-images/09-2.png "ロゴが丸くなる")
+
 # 10
 
 <!-- top-image（shibuya.webp）を入れる．すると，サイズが良くないので，以下のCSSを適用する -->
+
+ページにメイン画像を追加しましょう！
+
+画像の追加には`<img>`を使います．
+まずは以下のコードのように，そのまま追加しましょう．
+
+```
+<img src="shibuya.webp">
+```
+
+`.webp`は画像フォーマット「WebP」の拡張子です．
+
+以下のように，img タグを追加します．また，このあとのために class として`top-image`を追加しておきます．
+
+```
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+         ...(コード略)
+
+    </head>
+    <body>
+        <img src="shibuya.webp" class="top-image">
+        <img src="logo-mark.png" class="logo-mark">
+        <h1 class="hello-heading">こんにちは！</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
+            rem, quae voluptates accusantium quas facere sint voluptas cupiditate
+            maxime nemo inventore numquam?
+        </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
+        <a href="https://x.com/japan">私のXプロフィールへ</a>
+    </body>
+</html>
+```
+
+![Shibuya画像を追加したサイトの画像](./.readme-images/10-0.png "shibuya画像追加")
+
+画像が追加されました 🙌
+
+しかし，少し幅が足りないので，横幅を画面いっぱいにします．
+また，高さも`500px`にします．
+
+その際は，以下のような CSS を`style`の中に追記します．
 
 ```
 .top-image {
@@ -451,7 +707,17 @@ body {
 }
 ```
 
+今の状況を見てみましょう．
+
+![引き伸ばされたShibuya画像が表示されたサイトの画像](./.readme-images/10-1.png "引き伸ばされたshibuya画像")
+
+見た目はいい感じですが，実は横に引き伸ばされてしまっています．
+
+そのため，いい感じに調整します．調整には`object-fit: cover;`というプロパティを用います．
+
 <!-- しかしこれではアスペクト比が良くないので，次のようにする． -->
+
+こんな感じに CSS の`top-image`に追記します．
 
 ```
 .top-image {
@@ -460,6 +726,10 @@ body {
     object-fit: cover;
 }
 ```
+
+![アスペクト比がちょうどいいShibuya画像が表示されたサイトの画像](./.readme-images/10-2.png "アスペクト比がちょうどいいshibuya画像")
+
+少し分かりづらいですが，縦横比が画像の拡大により，ちょうどいい状態になっていることがわかります．
 
 # 11
 
@@ -487,7 +757,7 @@ HTML+CSSで画像を横100%，縦500pxに表示させたいのですが，端っ
 			.hello-heading {
 				color: #ff0000;
 			}
-			.gdgoc-logo {
+			.logo-mark {
 				width: 100px;
 				border-radius: 999px;
 				border: #999 2px solid;
@@ -496,7 +766,7 @@ HTML+CSSで画像を横100%，縦500pxに表示させたいのですが，端っ
 	</head>
 	<body>
 		<img src="shibuya.webp" class="top-image" />
-				<img src="gdgoc-logo-mark.jpg" class="gdgoc-logo" />
+				<img src="logo-mark.png" class="logo-mark" />
 				<h1 class="hello-heading">こんにちは！</h1>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -559,7 +829,7 @@ body {
 ```
 <div class="contents-wrapper">
     <div class="content">
-        <img src="gdgoc-logo-mark.jpg" class="gdgoc-logo" />
+        <img src="logo-mark.png" class="logo-mark" />
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -640,7 +910,7 @@ padding: <上> <右> <下> <左>
 			.hello-heading {
 				color: cadetblue;
 			}
-			.gdgoc-logo {
+			.logo-mark {
 				width: 100px;
 				border-radius: 999px;
 				border: #999 2px solid;
@@ -655,7 +925,7 @@ padding: <上> <右> <下> <左>
 		<img src="shibuya.webp" class="top-image" />
 		<div class="contents-wrapper">
 			<div class="content">
-				<img src="gdgoc-logo-mark.jpg" class="gdgoc-logo" />
+				<img src="logo-mark.png" class="logo-mark" />
 				<h1 class="hello-heading">こんにちは！</h1>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -720,7 +990,7 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 			.hello-heading {
 				color: cadetblue;
 			}
-			.gdgoc-logo {
+			.logo-mark {
 				width: 100px;
 				border-radius: 999px;
 				border: #999 2px solid;
@@ -760,7 +1030,7 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 		<img src="shibuya.webp" class="top-image" />
 		<div class="contents-wrapper">
 			<div class="content">
-				<img src="gdgoc-logo-mark.jpg" class="gdgoc-logo" />
+				<img src="logo-mark.png" class="logo-mark" />
 				<h1 class="hello-heading">こんにちは！</h1>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
