@@ -7,7 +7,7 @@ Web サイトを作りましょう！
 今回のレクチャーではこんな感じのサイトを作ります！
 基本的な HTML+CSS を学び，AI の活用方法にも触れていきます！
 
-![完成品](./.readme-images/00.png "完成品")
+<img src="./.readme-images/00.webp" width="500">
 
 # 01
 
@@ -181,7 +181,7 @@ maxime nemo inventore numquam?
 </html>
 ```
 
-![画像を追加した状態](./.readme-images/04.png "画像を追加した状態")
+<img src="./.readme-images/04.webp" width="500">
 
 # 05
 
@@ -202,7 +202,7 @@ HTML でリストを作る際には`<ul> ... </ul>`と`<li> ... </li>`を使い�
 
 上記のコードでこのようなリストができます．
 
-![リスト](./.readme-images/05.png "リスト")
+![リスト](./.readme-images/05.webp "リスト")
 
 サイトにも自分の好きな食べ物リストを作ってみましょう．
 
@@ -379,7 +379,7 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
 
 すると，このように文字に色がつきます！
 
-![赤色になった「こんにちは！」の文字](./.readme-images/06.png "赤い文字")
+<img src="./.readme-images/06.webp" width="500">
 
 # 07
 
@@ -390,7 +390,7 @@ img タグに適当な class をつけます．
 こんな感じにつけます．
 
 ```
-<img src="logo-mark.png" class="logo-mark">
+<img src="logo-mark.webp" class="logo-mark">
 ```
 
 コードはこんな感じになります．
@@ -477,7 +477,7 @@ img タグに適当な class をつけます．
 
 再度ページを確認すると，このようにロゴマークの大きさが変わります！
 
-![ロゴマークが縮小したサイトの画像](./.readme-images/07.png "縮小したロゴマーク")
+<img src="./.readme-images/07.webp" width="500">
 
 コードはこんな感じです！
 
@@ -606,7 +606,7 @@ body {
 }
 ```
 
-![borderがついたサイトの画像](./.readme-images/09-0.png "borderがつく")
+<img src="./.readme-images/09-0.webp" width="500">
 
 ここでは，灰色（`#999`）で，枠線のサイズが`2px`の枠線をつけています．
 
@@ -628,7 +628,7 @@ body {
 
 こんな感じに角が丸くなります．
 
-![少しロゴの角が丸くなったサイトの画像](./.readme-images/09-1.png "少し角が丸くなる")
+<img src="./.readme-images/09-1.webp" width="500">
 
 丸める度合いを非常に大きな値，`999px`にしてみましょう．
 
@@ -642,7 +642,7 @@ body {
 
 すると，円になります！
 
-![ロゴが丸くなったサイトの画像](./.readme-images/09-2.png "ロゴが丸くなる")
+<img src="./.readme-images/09-2.webp" width="500">
 
 # 10
 
@@ -691,7 +691,7 @@ body {
 </html>
 ```
 
-![Shibuya画像を追加したサイトの画像](./.readme-images/10-0.png "shibuya画像追加")
+<img src="./.readme-images/10-0.webp" width="500">
 
 画像が追加されました 🙌
 
@@ -709,7 +709,7 @@ body {
 
 今の状況を見てみましょう．
 
-![引き伸ばされたShibuya画像が表示されたサイトの画像](./.readme-images/10-1.png "引き伸ばされたshibuya画像")
+<img src="./.readme-images/10-1.webp" width="500">
 
 見た目はいい感じですが，実は横に引き伸ばされてしまっています．
 
@@ -727,7 +727,7 @@ body {
 }
 ```
 
-![アスペクト比がちょうどいいShibuya画像が表示されたサイトの画像](./.readme-images/10-2.png "アスペクト比がちょうどいいshibuya画像")
+<img src="./.readme-images/10-2.webp" width="500">
 
 少し分かりづらいですが，縦横比が画像の拡大により，ちょうどいい状態になっていることがわかります．
 
@@ -753,9 +753,8 @@ CSS では，
 
 CSS でよくわからないことになったら，AI を使ってみましょう．
 
-<!-- 多分上下左右に余白ができてしまうと思う．
+このようにプロンプトを書いてみました．
 
-ここで，AIを使う．プロンプトは以下のとおり．
 ```
 HTML+CSSで画像を横100%，縦500pxに表示させたいのですが，端っこに余白ができてしまいます．どうすれば余白を消せますか？
 
@@ -810,7 +809,7 @@ HTML+CSSで画像を横100%，縦500pxに表示させたいのですが，端っ
 
 ```
 
-返答は以下のとおり．
+回答はこんな感じになりました 👀
 
 ```
 画像を横幅いっぱいに表示しようとしたときに余白ができてしまうのですね。原因として考えられるのは、<body> や <img> タグにデフォルトで設定されているマージンやパディングです。
@@ -830,19 +829,9 @@ body {
 
 ```
 
-これを利用して，解決する．
-margin: 0;で解決する見込み
--->
+実際にやってみましょう！
 
-```
-body {
-    margin: 0;
-
-    background-color: #f0f0f0;
-}
-```
-
-コードは以下のようになりました．
+AI のアドバイスをもとに修正したコードは以下のようになります．
 
 ```
 <!DOCTYPE html>
@@ -851,7 +840,7 @@ body {
 	<head>
 		<style>
 			body {
-				margin: 0;
+				margin: 0; /* 追加 */
 				background-color: #f0f0f0;
 			}
 
@@ -893,8 +882,13 @@ body {
     </body>
 </html>
 
-
 ```
+
+実際にページを見ると，余白が消えています 🙌
+
+<img src="./.readme-images/11.webp" width="500">
+
+もし，開発中にうまくいかないことがあったら，コードをコピペしながら質問すると解決策が見つけやすくなり，開発効率が上がります 🚀
 
 # 12
 
@@ -917,7 +911,7 @@ body {
 
 構造化の方針としては，以下のようなグループにまとめていきます．
 
-![サイトの画像と構造](./.readme-images/12-2.png "サイトの画像と構造")
+<img src="./.readme-images/12-2.webp" width="500">
 
 <br>
 
@@ -963,17 +957,24 @@ HTML ファイルを構造化するときに使われるのは `<div> ... </div>
         <li>ピザ</li>
     </ul>
 </div>
-<a href="https://x.com/japan" class="my-profile-link"
-    >私のXプロフィールへ</a
->
 ```
 
-これに加えて，表示するコンテンツ全てを覆う`div`タグを作り，class として`contents-wrapper`を作ります．これは必須ではありませんが，画面のコンテンツ全てを中央に寄せたいときなどに便利なので，つけておきます．
+X のプロフィールリンクも同様にします．
+
+```
+<div class="contents">
+    <a href="https://x.com/japan" class="my-profile-link"
+        >私のXプロフィールへ</a
+    >
+</div>
+```
+
+これに加えて，表示するコンテンツ全てを覆う`div`タグを作り，class として`contents-wrapper`を作ります．これは必須ではありませんが，画面のコンテンツ全てを中央に寄せたいときに便利なのでつけておきます．
 
 ```
 <div class="contents-wrapper">
     <img src="logo-mark.png" class="logo-mark" />
-    <div class="content">
+    <div class="contents">
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -982,7 +983,7 @@ HTML ファイルを構造化するときに使われるのは `<div> ... </div>
             maxime nemo inventore numquam?
         </p>
     </div>
-    <div class="content">
+    <div class="contents">
         <h2>好きなたべもの</h2>
         <ul>
             <li>うどん</li>
@@ -990,9 +991,11 @@ HTML ファイルを構造化するときに使われるのは `<div> ... </div>
             <li>ピザ</li>
         </ul>
     </div>
-    <a href="https://x.com/japan" class="my-profile-link"
-        >私のXプロフィールへ</a
-    >
+    <div class="contents">
+        <a href="https://x.com/japan" class="my-profile-link"
+            >私のXプロフィールへ</a
+        >
+    </div>
 </div>
 ```
 
@@ -1008,73 +1011,102 @@ HTML ファイルを構造化するときに使われるのは `<div> ... </div>
 contents-wrapperは，中の要素について余白を開けるので`padding`を使う．
 また，paddingのオプションは -->
 
+前回作成したコードをもとに，各要素に余白を付けていきます．
+
+CSS で余白をつけるためには，主に`margin`と`padding`が使われます．
+
+- ある要素の**外側**に余白をつけるのが`margin`で，
+- ある要素の**内側**に余白をつけるのが`padding`です．
+
+それぞれいくつか書き方があります．
+
 ```
+margin: <幅>;
+margin: <上下> <左右>;
+margin: <上> <右> <下> <左>
+```
+
+```
+padding: <幅>;
+padding: <上下> <左右>;
 padding: <上> <右> <下> <左>
 ```
 
 <!-- になっていることを説明する，忘れたらAIに聞くのもいいよね，って話もする -->
 
+まずは横方向に余白を空けましょう！
+
+前回作成した`<div class="contents-wrapper"> ... </div>`の**内側**にある要素全てを，`150px`くらい左右中央に寄せましょう．
+
 ```
 .contents-wrapper {
-    padding: 0 150px 150px 150px;
+    padding: 0 150px;
 }
 ```
+
+<img src="./.readme-images/13-1.webp" width="500">
 
 <!-- でコンテンツをいい感じに中央がわに持って行く
 
 好きなたべものやloremの文の余白は以下のCSSで開ける -->
 
+左右に余白がついて，見やすくなりました ✨️
+今度は，縦方向に幅をもたせつつ，各グループ間に余白を空けましょう．
+
+前回用意した`<div class="contents"> ... </div>`の**外側**に縦方向の余白を空けましょう．
+
 ```
-.content {
+.contents {
     margin: 50px 0;
 }
 ```
 
+<img src="./.readme-images/13-2.webp" width="500">
+
+余白がいい感じにつきました 🎉
+
 <!-- この時点での制作物はこんな感じ -->
+
+いま，コードはこんな感じになっています．
 
 ```
 <!DOCTYPE html>
 
-<html lang="jp">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<title>Hello | MyWebSite</title>
 		<style>
 			body {
 				margin: 0;
-				padding: 0;
-
 				background-color: #f0f0f0;
 			}
 
+			.contents-wrapper {
+				padding: 0 150px;
+			}
+			.contents {
+				margin: 50px 0;
+			}
+
+			.hello-heading {
+				color: #ff0000;
+			}
+
+			.logo-mark {
+				width: 100px; /* "width"は幅を指定するプロパティ*/
+				border: #999 2px solid;
+				border-radius: 999px;
+			}
 			.top-image {
 				width: 100%;
 				height: 500px;
 				object-fit: cover;
-			}
-
-			.contents-wrapper {
-				padding: 0 150px 150px 150px;
-			}
-
-			.hello-heading {
-				color: cadetblue;
-			}
-			.logo-mark {
-				width: 100px;
-				border-radius: 999px;
-				border: #999 2px solid;
-			}
-
-			.content {
-				margin: 50px 0;
 			}
 		</style>
 	</head>
 	<body>
 		<img src="shibuya.webp" class="top-image" />
 		<div class="contents-wrapper">
-			<div class="content">
+			<div class="contents">
 				<img src="logo-mark.png" class="logo-mark" />
 				<h1 class="hello-heading">こんにちは！</h1>
 				<p>
@@ -1084,7 +1116,7 @@ padding: <上> <右> <下> <左>
 					maxime nemo inventore numquam?
 				</p>
 			</div>
-			<div class="content">
+			<div class="contents">
 				<h2>好きなたべもの</h2>
 				<ul>
 					<li>うどん</li>
@@ -1092,9 +1124,9 @@ padding: <上> <右> <下> <左>
 					<li>ピザ</li>
 				</ul>
 			</div>
-			<a href="https://x.com/japan" class="my-profile-link"
-				>私のXプロフィールへ</a
-			>
+			<div class="contents">
+				<a href="https://x.com/japan">私のXプロフィールへ</a>
+			</div>
 		</div>
 	</body>
 </html>
@@ -1102,6 +1134,66 @@ padding: <上> <右> <下> <左>
 ```
 
 # 14
+
+最後に，サイトを自由にカスタマイズしてみましょう 🎨
+
+このイベントでは，サイトをカスタマイズできるテンプレート素材を用意しています！
+
+[このリポジトリ](https://github.com/KanadeSisido/welcome-gdgoc-2025)にアクセスして，試しにグラデーション入りのボタンを付けてみましょう．
+
+<img src="./.readme-images/14-1.webp" width="500">
+
+`welcome-gdgoc-2025/Button/RoundedButton/`にアクセスします．
+
+<img src="./.readme-images/14-2.webp" width="500">
+
+今回は「オレンジピール」と書かれたボタンを使いたいと思います．
+
+`index.html`から「オレンジピール」と書かれたボタンをコピーします．
+
+```
+<a href="#" class="gradation-link-button">オレンジピール</a>
+```
+
+また，ボタンにつけられている class を見て，CSS からもコードをコピーします．
+
+```
+.gradation-link-button {
+	/* reset default */
+	text-decoration: none;
+	outline: none;
+
+	/* layout + shape */
+	padding: 10px 20px;
+	border-radius: 9999px;
+	display: inline-block;
+
+	/* color + design */
+	background: linear-gradient(135deg, #ea8800, #ff0077);
+	color: #fff;
+
+	/* font */
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 2em;
+}
+
+.gradation-link-button:hover {
+	background: linear-gradient(135deg, #d7a967, #ff6aaf);
+}
+```
+
+このボタンを既存の`<a>`タグと取り替えましょう．
+
+「オレンジピール」を「X のプロフィールへ」に変更し，URL も修正します 🖊️
+
+```
+<div class="contents">
+    <a href="https://x.com/japan" class="gradation-link-button">Xプロフィールへ</a>
+</div>
+```
+
+この時点でのコードは以下のとおりです ✨️
 
 <!--
 
@@ -1115,39 +1207,34 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 ```
 <!DOCTYPE html>
 
-<html lang="jp">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<title>Hello | MyWebSite</title>
 		<style>
 			body {
 				margin: 0;
-				padding: 0;
-
 				background-color: #f0f0f0;
 			}
 
+			.contents-wrapper {
+				padding: 0 150px;
+			}
+			.contents {
+				margin: 50px 0;
+			}
+
+			.hello-heading {
+				color: #ff0000;
+			}
+
+			.logo-mark {
+				width: 100px; /* "width"は幅を指定するプロパティ*/
+				border: #999 2px solid;
+				border-radius: 999px;
+			}
 			.top-image {
 				width: 100%;
 				height: 500px;
 				object-fit: cover;
-			}
-
-			.contents-wrapper {
-				padding: 0 150px 150px 150px;
-			}
-
-			.hello-heading {
-				color: cadetblue;
-			}
-			.logo-mark {
-				width: 100px;
-				border-radius: 999px;
-				border: #999 2px solid;
-			}
-
-			.content {
-				margin: 50px 0;
 			}
 
             .gradation-link-button {
@@ -1173,13 +1260,12 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
             .gradation-link-button:hover {
                 background: linear-gradient(135deg, #d7a967, #ff6aaf);
             }
-
 		</style>
 	</head>
 	<body>
 		<img src="shibuya.webp" class="top-image" />
 		<div class="contents-wrapper">
-			<div class="content">
+			<div class="contents">
 				<img src="logo-mark.png" class="logo-mark" />
 				<h1 class="hello-heading">こんにちは！</h1>
 				<p>
@@ -1189,7 +1275,7 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 					maxime nemo inventore numquam?
 				</p>
 			</div>
-			<div class="content">
+			<div class="contents">
 				<h2>好きなたべもの</h2>
 				<ul>
 					<li>うどん</li>
@@ -1197,10 +1283,9 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 					<li>ピザ</li>
 				</ul>
 			</div>
-			<a href="https://x.com/japan" class="my-profile-link"
-				>私のXプロフィールへ</a
-			>
-            <a href="#" class="gradation-link-button">オレンジピール</a>
+			<div class="contents">
+                <a href="https://x.com/japan" class="gradation-link-button">Xプロフィールへ</a>
+            </div>
 		</div>
 	</body>
 </html>
@@ -1209,13 +1294,32 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 
 # 15
 
-<!--
+最後に，テンプレートにないデザインがほしいときや，テンプレートのデザインを変更したいときの方法について説明します．
 
-AIと作る方法を説明する
+ほしいデザインや，加えたい表現があるとき，AI を活用しましょう．
 
-- わからないこと，やりたい表現をAIと相談する　（top画像の中央に文字を入れたい）
+今回は，スタイリッシュなボタンを AI に生成してもらいましょう！
+
+このようにプロンプトを書いて，生成してもらいました．
+<img src="./.readme-images/15-1.webp" width="800">
+
+出力された HTML と CSS を書いて，表示させてみたところ，このようなボタンができました ✨️
+![スタイリッシュなボタンの画像](./.readme-images/15-2.webp "スタイリッシュなボタンの画像")
+
+今度はかわいいボタンを AI に生成してもらいました！
+<img src="./.readme-images/15-3.webp" width="800">
+
+出力された HTML と CSS を書いたら，可愛らしいボタンが表示されました！
+![かわいいボタンの画像](./.readme-images/15-4.webp "かわいいボタンの画像")
+
+AI の出力にはコードの解説もふくまれており，理解しながら作りたいデザインが簡単に実装できます 👏
+
+<img src="./.readme-images/15-5.webp" width="800">
+
+他にも，Web ページの製作において，AI を活用できる場面は以下のようなものが考えられます．
+
+- わからないこと，やりたい表現を AI と相談する　（top 画像の中央に文字を入れたい）
 - ほしいデザインを作ってもらう（かわいいボタンを作って）
 - エラー，バグを相談する（画像に謎の余白が………）
 
-
- -->
+ぜひ想像を AI とともに Web サイトで表現してみてください！
