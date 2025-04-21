@@ -733,6 +733,26 @@ body {
 
 # 11
 
+しかし，もう少し修正するべき箇所がありそうです．
+
+トップ画像の上と横に余白ができてしまっています．
+
+CSS では，
+
+```
+.top-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+```
+
+となっており，幅`width`は`100%`になっており，左右に関して，画面全体を覆うはずです．
+
+しかし，そのようになっていません．
+
+CSS でよくわからないことになったら，AI を使ってみましょう．
+
 <!-- 多分上下左右に余白ができてしまうと思う．
 
 ここで，AIを使う．プロンプトは以下のとおり．
@@ -822,14 +842,138 @@ body {
 }
 ```
 
+コードは以下のようになりました．
+
+```
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				background-color: #f0f0f0;
+			}
+
+			.hello-heading {
+				color: #ff0000;
+			}
+
+			.logo-mark {
+				width: 100px; /* "width"は幅を指定するプロパティ*/
+				border: #999 2px solid;
+				border-radius: 999px;
+			}
+			.top-image {
+				width: 100%;
+				height: 500px;
+				object-fit: cover;
+			}
+		</style>
+	</head>
+	<body>
+	</head>
+    <body>
+        <img src="shibuya.webp" class="top-image">
+        <img src="logo-mark.png" class="logo-mark">
+        <h1 class="hello-heading">こんにちは！</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
+            rem, quae voluptates accusantium quas facere sint voluptas cupiditate
+            maxime nemo inventore numquam?
+        </p>
+        <h2>好きな食べ物</h2>
+        <ul>
+            <li>うどん</li>
+            <li>ラーメン</li>
+            <li>ピザ</li>
+        </ul>
+        <a href="https://x.com/japan">私のXプロフィールへ</a>
+    </body>
+</html>
+
+
+```
+
 # 12
 
 <!-- divによるwrappingを説明する．以下のcontents-wrapperやcontentのように，構造化して扱いやすいタグの構造にすることを説明する -->
 
+無事，トップ画像が表示されました 🙌
+
+さて，ここからは，コンテンツの余白を修正していきましょう．
+
+具体的には，もう少しアイコンや文字を真ん中の方へ持っていきたいです．
+
+また，次のグループにまとめて，各グループ間に余白を入れたいです．
+
+- ロゴと「こんにちは！」と文章
+- 好きな食べ物リスト
+
+<br>
+
+また，ここまでコードを書いてきて，少しコードの量が多くなってきました．そのため，いくつかの要素をグループ化して，構造的にすると，コードが書きやすい HTML ファイルになります．
+
+構造化の方針としては，以下のようなグループにまとめていきます．
+
+![サイトの画像と構造](./.readme-images/12-2.png "サイトの画像と構造")
+
+<br>
+
+HTML ファイルを構造化するときに使われるのは `<div> ... </div>` タグです．
+
+`div`を用いると，以下のようにタグをまとめられます．
+
+```
+<div>
+    <h1>Hello!</h1>
+    <p>Hello HTML+CSS!</p>
+    <a href="sub.html">SubPage</a>
+</div>
+```
+
+早速`div`を利用してグループにまとめましょう．
+
+まずは，ロゴと「こんにちは！」の文字，文章をまとめます．
+
+余白をつけるには CSS を利用するので，`div`に class として`contents`をつけておきます．
+
+```
+<div class="contents">
+    <img src="logo-mark.png" class="logo-mark" />
+    <h1 class="hello-heading">こんにちは！</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
+        rem, quae voluptates accusantium quas facere sint voluptas cupiditate
+        maxime nemo inventore numquam?
+    </p>
+</div>
+```
+
+同様に「好きなたべもの」リストも`div`タグでまとめ，class として`contents`をつけます．
+
+```
+<div class="contents">
+    <h2>好きなたべもの</h2>
+    <ul>
+        <li>うどん</li>
+        <li>ラーメン</li>
+        <li>ピザ</li>
+    </ul>
+</div>
+<a href="https://x.com/japan" class="my-profile-link"
+    >私のXプロフィールへ</a
+>
+```
+
+これに加えて，表示するコンテンツ全てを覆う`div`タグを作り，class として`contents-wrapper`を作ります．これは必須ではありませんが，画面のコンテンツ全てを中央に寄せたいときなどに便利なので，つけておきます．
+
 ```
 <div class="contents-wrapper">
+    <img src="logo-mark.png" class="logo-mark" />
     <div class="content">
-        <img src="logo-mark.png" class="logo-mark" />
         <h1 class="hello-heading">こんにちは！</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -851,6 +995,12 @@ body {
     >
 </div>
 ```
+
+これでコードが構造的になりました！
+
+次のセクションでは，このコードを利用して，余白を付けていきます．
+
+いよいよラストスパートです 🙌
 
 # 13
 
