@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				background-color: #f0f0f0;
+			}
+
+			.contents-wrapper {
+				padding: 0 150px;
+			}
+			.contents {
+				margin: 50px 0;
+			}
+
+			.hello-heading {
+				color: #ff0000;
+			}
+
+			.logo-mark {
+				width: 100px; /* "width"は幅を指定するプロパティ*/
+				border: #999 2px solid;
+				border-radius: 999px;
+			}
+			.top-image {
+				width: 100%;
+				height: 500px;
+				object-fit: cover;
+			}
+
+			.gradation-link-button {
+				/* reset default */
+				text-decoration: none;
+				outline: none;
+
+				/* layout + shape */
+				padding: 10px 20px;
+				border-radius: 9999px;
+				display: inline-block;
+
+				/* color + design */
+				background: linear-gradient(135deg, #ea8800, #ff0077);
+				color: #fff;
+
+				/* font */
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 2em;
+			}
+
+			.gradation-link-button:hover {
+				background: linear-gradient(135deg, #d7a967, #ff6aaf);
+			}
+		</style>
+	</head>
+	<body>
+		<img src="shibuya.webp" class="top-image" />
+		<div class="contents-wrapper">
+			<div class="contents">
+				<img src="logo-mark.png" class="logo-mark" />
+				<h1 class="hello-heading">こんにちは！</h1>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
+					rem, quae voluptates accusantium quas facere sint voluptas cupiditate
+					maxime nemo inventore numquam?
+				</p>
+			</div>
+			<div class="contents">
+				<h2>好きなたべもの</h2>
+				<ul>
+					<li>うどん</li>
+					<li>ラーメン</li>
+					<li>ピザ</li>
+				</ul>
+			</div>
+			<div class="contents">
+				<a href="https://x.com/japan" class="gradation-link-button"
+					>Xプロフィールへ</a
+				>
+			</div>
+		</div>
+	</body>
+</html>
