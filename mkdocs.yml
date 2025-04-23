@@ -1,0 +1,14 @@
+site_name: GDGoC Japan Welcome Event 2025
+theme:
+  name: material
+extra_css:
+  - stylesheets/extra.css
+language: ja
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

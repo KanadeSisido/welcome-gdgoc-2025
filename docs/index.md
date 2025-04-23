@@ -1,64 +1,59 @@
+---
+title: Webページを作ろう！
+icon: simple/devbox
+---
+
 # GDGoC Japan Welcome Event 2025 @Google Shibuya Office
 
-# 00
+## 01: Intro
 
 Web サイトを作りましょう！
 
 今回のレクチャーではこんな感じのサイトを作ります！
 基本的な HTML+CSS を学び，AI の活用方法にも触れていきます！
 
-<img src="./.readme-images/00.webp" width="500">
+<img src="readme-images/00.webp" width="500">
 
-# 01
+## 02: 土台を作成しよう！
 
 さっそく始めましょう！
 最初は Web サイトの土台を作ります.
 
-```
+以下のコードをコピペしてください 📋️
 
+```html linenums="1"
 <!DOCTYPE html>
 
 <html>
-
+	<head>
+		/* ページの設定などを書く */
+	</head>
+	<body>
+		/* ページの内容を書く */
+	</body>
 </html>
-
 ```
 
 `!DOCTYPE html`はこのファイルが html ファイルであることを明示しています．
 
 Web サイトで表示する要素は`<html>...</html>`などの「タグ」で囲う必要があります！
 
-# 02
-
-土台のつづき
-
-```
-<!DOCTYPE html>
-
-<html>
-    <head>
-        /* ページの設定などを書く */
-    </head>
-    <body>
-        /* ページの内容を書く */
-    </body>
-</html>
-```
-
 `html`タグの中を`head`と`body`という２つのタグで分割します．
 `head`にはページの設定，`body`にはページの内容を書いていきます．
 
-# 03
+## 03: 文字を追加してみよう
 
 早速文字を追加してみましょう！
 
-## h1 とは
+### h1 とは
 
 `<h1> ... </h1>`は見出しです．`h1`の他にも`h2`，`h3`，`h4`，……があり，数字が小さいほど，目立つようになっています．
 
 つまり，`<h1>`には一番目立たせたい内容，例えばページのタイトル，章の名前などを書くことがあります．
 
-## p とは
+このようにコードを加筆します！
+
+### p とは
 
 `<p> ... </p>`は段落を表現します．`p`は段落を意味する`"p"aragraph`の略です．
 
@@ -74,31 +69,31 @@ maxime nemo inventore numquam?
 
 次のようになります．
 
-```
-
+```html linenums="1" hl_lines="9-15"
 <!DOCTYPE html>
 
 <html>
-    <head>
-    </head>
-    <body>
-        <h1>こんにちは！</h1>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, illum dolor. Aspernatur magni reiciendis labore totam et
-            rem, quae voluptates accusantium quas facere sint voluptas cupiditate
-            maxime nemo inventore numquam?
-        </p>
-    </body>
+	<head>
+		/* ページの設定などを書く */
+	</head>
+	<body>
+		/* ページの内容を書く */
+		<h1>こんにちは！</h1>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+			illum dolor. Aspernatur magni reiciendis labore totam et rem, quae
+			voluptates accusantium quas facere sint voluptas cupiditate maxime nemo
+			inventore numquam?
+		</p>
+	</body>
 </html>
-
 ```
 
-# 04
+## 04: リンク・画像を追加しよう
 
 リンク・画像を追加しましょう！
 
-## リンクを追加
+### リンクを追加
 
 リンクを追加する際は`<a href="...."> ... </a>`を利用します．
 `href`のあとにリンク先の URL を書くと，クリックしたときにページ遷移させることができます．
@@ -156,7 +151,7 @@ maxime nemo inventore numquam?
 </html>
 ```
 
-## 画像を追加
+### 画像を追加
 
 リンクを追加する際は`<img src="....">`を利用します．
 `img`のあとに画像の名前（場所）を書くと，画像を表示できます．
@@ -181,9 +176,9 @@ maxime nemo inventore numquam?
 </html>
 ```
 
-<img src="./.readme-images/04.webp" width="500">
+<img src="readme-images/04.webp" width="500">
 
-# 05
+## 05: リストを作成してみよう
 
 <!-- // TODO: <ul>と<li>の使い方を説明（好きな食べ物） -->
 
@@ -202,7 +197,7 @@ HTML でリストを作る際には`<ul> ... </ul>`と`<li> ... </li>`を使い�
 
 上記のコードでこのようなリストができます．
 
-![リスト](./.readme-images/05.webp "リスト")
+![リスト](readme-images/05.webp "リスト")
 
 サイトにも自分の好きな食べ物リストを作ってみましょう．
 
@@ -379,7 +374,7 @@ class 名として`hello-heading`と書きましたが，これは好きな文�
 
 すると，このように文字に色がつきます！
 
-<img src="./.readme-images/06.webp" width="500">
+<img src="readme-images/06.webp" width="500">
 
 # 07
 
@@ -477,7 +472,7 @@ img タグに適当な class をつけます．
 
 再度ページを確認すると，このようにロゴマークの大きさが変わります！
 
-<img src="./.readme-images/07.webp" width="500">
+<img src="readme-images/07.webp" width="500">
 
 コードはこんな感じです！
 
@@ -606,7 +601,7 @@ body {
 }
 ```
 
-<img src="./.readme-images/09-0.webp" width="500">
+<img src="readme-images/09-0.webp" width="500">
 
 ここでは，灰色（`#999`）で，枠線のサイズが`2px`の枠線をつけています．
 
@@ -628,7 +623,7 @@ body {
 
 こんな感じに角が丸くなります．
 
-<img src="./.readme-images/09-1.webp" width="500">
+<img src="readme-images/09-1.webp" width="500">
 
 丸める度合いを非常に大きな値，`999px`にしてみましょう．
 
@@ -642,7 +637,7 @@ body {
 
 すると，円になります！
 
-<img src="./.readme-images/09-2.webp" width="500">
+<img src="readme-images/09-2.webp" width="500">
 
 # 10
 
@@ -691,7 +686,7 @@ body {
 </html>
 ```
 
-<img src="./.readme-images/10-0.webp" width="500">
+<img src="readme-images/10-0.webp" width="500">
 
 画像が追加されました 🙌
 
@@ -709,7 +704,7 @@ body {
 
 今の状況を見てみましょう．
 
-<img src="./.readme-images/10-1.webp" width="500">
+<img src="readme-images/10-1.webp" width="500">
 
 見た目はいい感じですが，実は横に引き伸ばされてしまっています．
 
@@ -727,7 +722,7 @@ body {
 }
 ```
 
-<img src="./.readme-images/10-2.webp" width="500">
+<img src="readme-images/10-2.webp" width="500">
 
 少し分かりづらいですが，縦横比が画像の拡大により，ちょうどいい状態になっていることがわかります．
 
@@ -886,7 +881,7 @@ AI のアドバイスをもとに修正したコードは以下のようにな�
 
 実際にページを見ると，余白が消えています 🙌
 
-<img src="./.readme-images/11.webp" width="500">
+<img src="readme-images/11.webp" width="500">
 
 もし，開発中にうまくいかないことがあったら，コードをコピペしながら質問すると解決策が見つけやすくなり，開発効率が上がります 🚀
 
@@ -911,7 +906,7 @@ AI のアドバイスをもとに修正したコードは以下のようにな�
 
 構造化の方針としては，以下のようなグループにまとめていきます．
 
-<img src="./.readme-images/12-2.webp" width="500">
+<img src="readme-images/12-2.webp" width="500">
 
 <br>
 
@@ -1044,7 +1039,7 @@ padding: <上> <右> <下> <左>
 }
 ```
 
-<img src="./.readme-images/13-1.webp" width="500">
+<img src="readme-images/13-1.webp" width="500">
 
 <!-- でコンテンツをいい感じに中央がわに持って行く
 
@@ -1061,7 +1056,7 @@ padding: <上> <右> <下> <左>
 }
 ```
 
-<img src="./.readme-images/13-2.webp" width="500">
+<img src="readme-images/13-2.webp" width="500">
 
 余白がいい感じにつきました 🎉
 
@@ -1141,11 +1136,11 @@ padding: <上> <右> <下> <左>
 
 [このリポジトリ](https://github.com/KanadeSisido/welcome-gdgoc-2025)にアクセスして，試しにグラデーション入りのボタンを付けてみましょう．
 
-<img src="./.readme-images/14-1.webp" width="500">
+<img src="readme-images/14-1.webp" width="500">
 
 `welcome-gdgoc-2025/Button/RoundedButton/`にアクセスします．
 
-<img src="./.readme-images/14-2.webp" width="500">
+<img src="readme-images/14-2.webp" width="500">
 
 今回は「オレンジピール」と書かれたボタンを使いたいと思います．
 
@@ -1301,20 +1296,20 @@ HTMLとCSSをコピペしてみる（１つ目のコード）
 今回は，スタイリッシュなボタンを AI に生成してもらいましょう！
 
 このようにプロンプトを書いて，生成してもらいました．
-<img src="./.readme-images/15-1.webp" width="800">
+<img src="readme-images/15-1.webp" width="800">
 
 出力された HTML と CSS を書いて，表示させてみたところ，このようなボタンができました ✨️
-![スタイリッシュなボタンの画像](./.readme-images/15-2.webp "スタイリッシュなボタンの画像")
+![スタイリッシュなボタンの画像](readme-images/15-2.webp "スタイリッシュなボタンの画像")
 
 今度はかわいいボタンを AI に生成してもらいました！
-<img src="./.readme-images/15-3.webp" width="800">
+<img src="readme-images/15-3.webp" width="800">
 
 出力された HTML と CSS を書いたら，可愛らしいボタンが表示されました！
-![かわいいボタンの画像](./.readme-images/15-4.webp "かわいいボタンの画像")
+![かわいいボタンの画像](readme-images/15-4.webp "かわいいボタンの画像")
 
 AI の出力にはコードの解説もふくまれており，理解しながら作りたいデザインが簡単に実装できます 👏
 
-<img src="./.readme-images/15-5.webp" width="800">
+<img src="readme-images/15-5.webp" width="800">
 
 他にも，Web ページの製作において，AI を活用できる場面は以下のようなものが考えられます．
 

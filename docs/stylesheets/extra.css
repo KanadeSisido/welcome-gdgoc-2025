@@ -1,0 +1,18 @@
+.md-content img {
+	filter: drop-shadow(5px 5px 10px #00000010);
+}
+
+/* .md-header {
+	background: linear-gradient(to right, #ddd6f3, #faaca8);
+	color: #555;
+}
+
+.md-tabs__inner {
+	background: linear-gradient(to right, #ddd6f3, #faaca8);
+	color: #555;
+}
+
+nav.md-tabs {
+	background: linear-gradient(to right, #ddd6f3, #faaca8);
+	color: #555;
+} */
