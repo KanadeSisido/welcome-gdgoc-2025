@@ -1,6 +1,8 @@
 site_name: GDGoC Japan Welcome Event 2025
 theme:
   name: material
+  features:
+  - navigation.footer
 extra_css:
   - stylesheets/extra.css
 language: ja
@@ -12,3 +14,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+repo_url: https://github.com/KanadeSisido/welcome-gdgoc-2025
+repo_name: welcome-gdgoc-2025
+nav:
+  - HTMLを書こう！: 01.md
+  - CSSを書こう！(1/2): 02.md
+  - CSSを書こう！(2/2): 03.md
