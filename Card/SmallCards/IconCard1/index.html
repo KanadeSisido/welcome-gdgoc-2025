@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Icon Card 1</title>
-		<link rel="stylesheet" href="style.css" />
+		<style>
+			
+		.card-wrapper {
+			/* layout + shape */
+			display: flex;
+			align-items: center;
+			width: 540px;
+			height: 200px;
+			border-radius: 9999px;
+
+			/* color + design */
+			background-color: #dcdcdc;
+			filter: drop-shadow(0 0 5px #33333360);
+			box-sizing: border-box;
+		}
+
+		.card-icon {
+			/* layout + shape */
+			height: 100%;
+			border-radius: 9999px;
+
+			/* color + design */
+			filter: drop-shadow(0 0 10px #33333370);
+		}
+
+		.name-wrapper {
+			margin-left: 40px;
+		}
+
+		.name-wrapper h2 {
+			/* font */
+			font-size: 28px;
+			font-weight: 500;
+			letter-spacing: 0.05em;
+		}
+
+		.name-wrapper p {
+			/* font */
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 0.1em;
+		}
+
+		</style>
 	</head>
 	<body>
 		<div class="card-wrapper">
-			<img src="../../icon.png" class="card-icon" alt="myicon" />
+			<img src="icon.png" class="card-icon" alt="myicon" />
 			<div class="name-wrapper">
 				<h2>Kanade Sisido</h2>
 				<p>GDGoC TMU</p>

@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Header A</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<style>
+			header {
+				/* ヘッダーの裏側にも何か表示したい場合は position: fixed; に変更する*/
+				position: sticky;
+				z-index: 999;
+				top: 0;
 
-		<!-- "Cormorant" is Licensed under the SIL Open Font License, Version 1.1.
-        Copyright 2015 the Cormorant Project Authors (github.com/CatharsisFonts/Cormorant) -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
-			rel="stylesheet"
-		/>
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				width: 100%;
+				height: 100px;
+
+				padding: 0 30px;
+				box-sizing: border-box;
+			}
+
+			.header-title {
+				font-size: xx-large;
+				color: #333;
+			}
+
+			.header-contents {
+				display: flex;
+				gap: 40px;
+			}
+
+			.header-contents li {
+				list-style: none;
+			}
+
+			.content {
+				font-size: larger;
+				text-decoration: none;
+				color: #333;
+			}
+			.content:hover {
+				color: #aaa;
+			}
+
+			.rounded-content {
+				font-size: larger;
+				text-decoration: none;
+
+				padding: 10px 20px;
+				border-radius: 999px;
+
+				background-color: darkslateblue;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -25,89 +64,5 @@
 				<li><a href="#" class="rounded-content">GDGoC</a></li>
 			</ul>
 		</header>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia
-			rerum quidem eius odit, quos provident vero! Et consequuntur ab expedita
-			facilis velit eveniet ad distinctio necessitatibus inventore, eligendi
-			eaque?
-		</div>
 	</body>
 </html>
